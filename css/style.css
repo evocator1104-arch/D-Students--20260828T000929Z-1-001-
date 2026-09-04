@@ -28,7 +28,7 @@ body {
   font-size: 16px;
   /* line-height: 1.6; */
   /* line-height: 160%; */
-  letter-spacing: -0.02em;
+  /* letter-spacing: -0.02em; */
   color: #000;
   background-color: #fff;
 }
@@ -193,7 +193,7 @@ section {
   right: 0;
   top: -16px;
   display: block;
-  /* width: 100% */
+  /* width: 100%; */
   height: 20px;
   /* background-color: brown; */
   background-color: #fff;
@@ -212,13 +212,14 @@ section {
   background-size: contain;
   z-index: 1;
 }
+
 .hero .main-visual .main-visual-bg {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url("../assets/images/slide_1.png") no-repeat center;
+  background: url("../assets/images/slide_3.jpg") no-repeat center;
   background-size: cover;
-  /* figma: effect -> layer blur */
+  /* Figma: Effect -> Layer blur */
   filter: blur(3px);
 }
 .hero .main-visual .main-visual-bg::after {
@@ -241,14 +242,14 @@ section {
   width: 100%;
   height: 100%;
   max-width: 1320px;
-  background-color: #d9d9d9;
+  /* background-color: #d9d9d9; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* swiper 라이브러리로 대체 */
-.swiper {
+/* Swiper 라이브러리로 대체 */
+.sw-Hero {
   position: relative;
   width: 100%;
   height: 100%;
@@ -277,7 +278,6 @@ section {
 }
 .info-box {
   position: relative;
-
   flex: 1;
   padding-top: 110px;
 }
@@ -289,7 +289,6 @@ section {
   position: relative;
   margin-bottom: 20px;
 }
-
 .bage {
   display: flex;
   align-items: center;
@@ -300,10 +299,9 @@ section {
   background-color: #7a45e5;
   font-weight: 700;
   color: #fff;
-  border-radius: 25;
+  border-radius: 25px;
   letter-spacing: 0;
 }
-
 .location {
   position: relative;
   display: flex;
@@ -311,23 +309,21 @@ section {
   gap: 8px;
   margin-bottom: 8px;
 }
-
 .location img {
   width: 15px;
   height: 18px;
   object-fit: contain;
 }
-
 .location span {
-  font-size: 18;
-  font-weight: 800;
+  font-size: 18px;
   color: #fff;
   /* letter-spacing: 0; */
 }
 .slide-title-head {
-  font-size:;
-  font-weight:;
-  font-style:;
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  /* letter-spacing: 0; */
 }
 
 .main-schedule {
@@ -347,7 +343,6 @@ section {
   padding-top: 20px;
   border-top: 1px solid #80808a;
 }
-
 .explain li {
   position: relative;
   display: flex;
@@ -355,51 +350,60 @@ section {
   gap: 8px;
   color: #fff;
 }
-.explain li ::before {
+.explain li::before {
   content: "";
   display: block;
   width: 5px;
   height: 1px;
   background-color: #fff;
 }
-.prev-btn {
-  position: relative;
+
+.hero-prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   width: 64px;
   height: 64px;
+  z-index: 10;
 }
-
-.prev-btn img {
+.hero-prev-btn img {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: 0;
-}
-.next-btn {
-  position: absolute;
-  width: 64px;
-  width: 64px;
+  /* opacity: 0; */
 }
 
-.next-btn img {
+.hero-next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  z-index: 10;
+}
+
+.hero-next-btn img {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: 0;
+  /* opacity: 0; */
 }
-.prev-btn .on,
-.next-btn .on {
+.hero-prev-btn .on,
+.hero-next-btn .on {
   opacity: 1;
 }
-.prev-btn .off,
-.next-btn .off {
+/* .hero-prev-btn .off,
+.hero-next-btn .off {
   opacity: 0.35;
-}
+} */
 
 .keywords {
   width: 100%;
