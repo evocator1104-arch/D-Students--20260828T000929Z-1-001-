@@ -52,3 +52,8 @@ playStopBtn.addEventListener("click", () => {
   swHero.autoplay.stop();
   console.log("슬라이드 오토플레이");
 });
+
+playStopBtn.style = "재생";
+playStopBtn.textContent = "재생";
+playStopBtn.style = "재생";
+playStopBtn.textContent = "정지";
