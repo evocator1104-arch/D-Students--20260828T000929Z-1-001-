@@ -1,0 +1,8 @@
+# 모든 텍스트 파일은 Git이 자동으로 판단하되, 줄바꿈은 LF로 고정합니다.
+* text=auto eol=lf
+
+# 이미지, 압축파일 등 바이너리 파일은 줄바꿈 변환을 하지 않도록 예외 처리합니다.
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
